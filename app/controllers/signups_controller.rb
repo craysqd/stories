@@ -1,5 +1,4 @@
 class SignupsController < ApplicationController
-
   def new
     @signup = Signup.new
   end
@@ -17,5 +16,4 @@ class SignupsController < ApplicationController
   def signup_params
     params.require(:signup).permit(:firstname, :email)
   end
-  
 end
